@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <title>~</title>
+    <link rel="stylesheet" href="https://startpages.github.io/startpages/startpage-tudurom/main.css">
+  </head>
+
+  <body>
+    <main>
+      <h1>Home</h1>
+      <p>
+        <li class="subh">entertainment</li>
+        <li><a href="https://old.reddit.com/user/me/m/fit/">fit</a></li>
+        <li><a href="https://old.reddit.com/user/me/m/dis/">dis</a></li>
+        <li><a href="https://open.spotify.com/">spotify</a></li>
+        <li><a href="https://www.youtube.com/feed/subscriptions">yt</a></li>
+        <li><a href="https://www.instagram.com/">insta</a></li>
+        <li><a href="https://www.facebook.com/">fb</a></li>
+      </p>
+      <p>
+        <li class="subh">google</li>
+        <li><a href="https://calendar.google.com/calendar/u/0/r">calendar</a></li>
+        <li><a href="https://mail.google.com/mail/u/kim.e.josefsen">mail (kej)</a></li>
+        <li><a href="https://mail.google.com/mail/u/aparthia@gmail.com">mail (apa)</a></li>
+        <li><a href="https://photos.google.com/u/1/">photos</a></li>
+        <li><a href="https://keep.google.com/u/1/">keep</a></li>
+        <li><a href="https://www.google.com/maps">maps</a></li>
+      </p>
+      <p>
+        <li class="subh">work</li>
+        <li><a href="https://trello.com/b/tRoMMMHB/daglige-opgaver">trello</a></li>
+        <li><a href="https://chat.openai.com/">chatGPT</a></li>
+        <li><a href="https://goblin.tools/">tools</a></li>
+      </p>
+      <p>
+        <li class="subh">stuff</li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSer52y2L3NScee9QksMKgU-Qwq_n7SNstVfm9riZFe61KgKBw/viewform">survey</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1OundO9y0wTRD6dpArQUoybhrB29WidYI/edit#gid=1364998528">tracking</a></li>
+      </p>
+      <p>
+        <input type="text" class="searchfield" style="width: 100%;" autofocus placeholder="search..." />
+      </p>
+    </main>
+    <script>
+      document.getElementsByClassName('searchfield')[0].onkeypress = function (e) {
+        if (!e) e = window.event;
+        var keyCode = e.keyCode || e.which;
+        if (keyCode == '13') {
+          window.location.href = "https://www.google.com/search?q=" + document.getElementsByClassName('searchfield')[0].value;
+        }
+      };
+    </script>
+  </body>
+</html>
